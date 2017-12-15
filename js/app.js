@@ -48,7 +48,7 @@ document.querySelector(".btn-hold").addEventListener('click',function(){
             document.querySelector("#score-"+activePlayer).textContent=scores[activePlayer-1];
             if(scores[activePlayer-1]>maxScore)
                 {
-                    document.querySelector(".pname").textContent="Winner!!!";
+                    document.querySelector(".player"+activePlayer+" .pname").textContent="Winner!!!";
                     document.querySelector(".dice").style.display='none';
                     document.querySelector(".player"+activePlayer).classList.add("winner");
                     document.querySelector(".player"+activePlayer).classList.remove("active");
